@@ -3,7 +3,7 @@ import {useContext} from 'react'
 export function ShowTasks() {
     const {tasks:data, deleteTask} = useContext(TaskContext)
     return (
-        <div className=' grid grid-cols-4 gap-5'>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
         {data.map((t) => (
                 <div key={t.id} className='bg-gray-800 text-white p-4 rounded-md'>
                     <h1 className='text-xl font-bold capitalize'>{t.title}</h1>

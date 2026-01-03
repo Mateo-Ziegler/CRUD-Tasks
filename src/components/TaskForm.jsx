@@ -9,7 +9,7 @@ function TaskForm() {
 
     return (
             <div className='max-w-md mx-auto'>
-                <form className='bg-slate-800 p-10 mb-4 rounded-2xl' onSubmit={(e) => {
+                <form className='bg-slate-800 p-10 mb-6 rounded-2xl' onSubmit={(e) => {
                 e.preventDefault()
                 if(!title.trim() || !description.trim()) {
                     alert("Debes añadir un título y una descripción.")
